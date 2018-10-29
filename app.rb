@@ -5,7 +5,7 @@ class Chitter < Sinatra::Base
     erb :index
   end
 
-  get '/submit' do
+  post '/feed' do
     erb :feed
   end
 
