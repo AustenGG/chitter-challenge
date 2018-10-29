@@ -1,6 +1,6 @@
-feature 'Testing Hello World' do
-  scenario 'Hello world' do
+feature 'Testing Chitter' do
+  scenario 'Chitter heading' do
     visit '/'
-    expect(page).to have_content('Hello World')
+    expect(page).to have_content('Chitter!')
   end
 end
