@@ -6,7 +6,7 @@ class Chitter < Sinatra::Base
   end
 
   get '/submit' do
-    'Hello world'
+    erb :feed
   end
 
 
