@@ -1,7 +1,7 @@
 Chitter Challenge
 =================
 
-Team: Ahmed
+Team: Ahmed - Austen 
 
 * Challenge time: rest of the day and weekend, until Monday 9am
 * Feel free to use Google, your notes, books, etc. but work on your own
