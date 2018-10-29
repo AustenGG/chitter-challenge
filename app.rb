@@ -1,10 +1,9 @@
 require "sinatra/base"
-require './lib/bookmark'
 
 class Chitter < Sinatra::Base
   get '/' do
-    'Chitter'
+    'Hello World'
   end
-  
+
   run! if app_file == $0
 end
