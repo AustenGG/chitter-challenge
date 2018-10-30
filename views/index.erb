@@ -43,13 +43,12 @@ div {
 
 <center><h1>Chitter!</h1></center>
 <div>
-  <form action="/feed">
+  <form action="/feed" method="post">
     <label for="fname">Username:</label>
-    <input type="text" id="Uname" name="Username" placeholder="Your name..">
+    <input type="text" id="Uname" name="username" placeholder="Your name..">
 
     <label for="message">Message:</label>
-    <input type="text" id="msg" name="message" placeholder="Your message..">
-
+    <input type="text" id="msg" name="peep" placeholder="Your message..">
 
     <input type="submit" value="Submit">
   </form>
