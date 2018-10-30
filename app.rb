@@ -5,11 +5,9 @@ class Chitter < Sinatra::Base
     erb :index
   end
 
-  post '/feed' do
-    erb :feed
-  end
-
-
+  #post '/feed' do
+    #erb :feed
+  #end
 
   run! if app_file == $0
 end
