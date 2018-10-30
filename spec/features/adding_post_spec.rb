@@ -1,21 +1,11 @@
-feature 'Testing Chitter' do
-  scenario 'Chitter heading' do
+feature 'submitting post' do
+  scenario 'filling in name and peep' do
     visit '/'
-    fill_in('peep', with:'hey my first peep!')
-    expect(page).to have_content('hey my first peep!')
-  end
-end
+    fill_in('username', with: 'Jhon')
+    fill_in('peep', with: 'My first peep')
+    click_button('Submit')
 
-feature 'Testing Username field' do
-  scenario 'Username field' do
-    visit '/'
-    expect(page).to have_content('Username:')
-  end
-end
-
-feature 'Testing Message field' do
-  scenario 'Message field' do
-    visit '/'
-    expect(page).to have_content('Enter message:')
+    expect(page).to have_content('Jhon')
+    expect(page).to have_content('My first peep')
   end
 end
