@@ -6,7 +6,7 @@ class Chitter < Sinatra::Base
   end
 
   post '/feed' do
-    session[:name] = params[:username]
+    session[:username] = params[:username]
     session[:peep] = params[:peep]
     erb :feed
   end
