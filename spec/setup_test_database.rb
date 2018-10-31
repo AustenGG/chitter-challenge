@@ -5,6 +5,6 @@ class Clear
     p "Setting up test database..."
     connection = PG.connect(dbname: 'chitter_test')
     # Clear the bookmarks table
-    connection.exec("TRUNCATE chitter;")
+    connection.exec("TRUNCATE tweets;")
   end
 end
