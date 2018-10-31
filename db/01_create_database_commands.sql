@@ -1,1 +1,1 @@
-CREATE DATABASE "chitter_teste";
+CREATE DATABASE "chitter";
