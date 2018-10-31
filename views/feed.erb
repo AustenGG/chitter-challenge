@@ -13,10 +13,23 @@ p {
   color: #0D0D0D;
   font-family:  arial;
 }
+div {
+    font-family: arial;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+label {
+
+}
 </style>
 <body>
+
   <center><h1>Chitter Feed</h1></center>
- <center><h2> <%= session[:username] %> </h2></center>
+  <div>
+ <center><h2> <label for="fname">@</label><%= session[:username] %> </h2></center>
 <center><p> <%= session[:peep] %></p></center>
+</div>
+
 </body>
 </html>
