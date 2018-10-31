@@ -1,2 +1,22 @@
-<h1> <%= session[:username] %> </h1>
-<p> <%= session[:peep] %></p>
+<!DOCTYPE html>
+<html>
+<style>
+h1 {
+  color: #3B5998;
+  font-family: arial;
+}
+h2 {
+  color: #0D0D0D;
+  font-family: arial;
+}
+p {
+  color: #0D0D0D;
+  font-family:  arial;
+}
+</style>
+<body>
+  <center><h1>Chitter Feed</h1></center>
+ <center><h2> <%= session[:username] %> </h2></center>
+<center><p> <%= session[:peep] %></p></center>
+</body>
+</html>
