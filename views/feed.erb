@@ -19,17 +19,21 @@ div {
     background-color: #f2f2f2;
     padding: 20px;
 }
-label {
-
+button {
+    border-radius: 5px;
+    border: 1px solid black;
 }
 </style>
+
 <body>
 
   <center><h1>Chitter Feed</h1></center>
   <div>
  <center><h2> <label for="fname">@</label><%= session[:username] %> </h2></center>
 <center><p> <%= session[:peep] %></p></center>
+<center><button> New Peep </button></center>
 </div>
+
 
 </body>
 </html>

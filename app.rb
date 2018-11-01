@@ -10,6 +10,9 @@ class Chitter < Sinatra::Base
     session[:peep] = params[:peep]
     erb :feed
   end
+  get '/' do
+    erb :sign_up
+  end
 
   run! if app_file == $0
 end
