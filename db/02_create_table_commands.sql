@@ -1,1 +1,0 @@
-CREATE TABLE tweets(id SERIAL PRIMARY KEY, username TEXT, tweets VARCHAR(100));

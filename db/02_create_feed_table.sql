@@ -1,0 +1,1 @@
+CREATE TABLE feed(id SERIAL PRIMARY KEY, username TEXT, peeps VARCHAR(100));
