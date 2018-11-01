@@ -29,8 +29,10 @@ button {
 
   <center><h1>Chitter Feed</h1></center>
   <div>
- <center><h2> <label for="fname">@</label><%= session[:username] %> </h2></center>
-<center><p> <%= session[:peep] %></p></center>
+    <% @feed.each do |feed| %>
+ <center><h2> <label for="fname">@</label><%= feed.username %> </h2></center>
+<center><p> <%= feed.peeps %></p></center>
+<% end %>
 <center><form method="get" action="/">
  <input type="submit" value="New Peep"/></center>
  </form>
