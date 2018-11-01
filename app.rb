@@ -22,6 +22,15 @@ class Chitter < Sinatra::Base
     erb :sign_up
   end
 
+  post '/sign_up' do
+    username = params['username']
+    password = params['password']
+    connection = PG.connect(dbname: 'chitter')
+    connection.exec("INSERT INTO user_details (username, password) VALUES('#{username}', '#{password}')")
+
+    redirect '/feed'
+  end
+
 
   run! if app_file == $0
 end
