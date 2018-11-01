@@ -31,7 +31,9 @@ button {
   <div>
  <center><h2> <label for="fname">@</label><%= session[:username] %> </h2></center>
 <center><p> <%= session[:peep] %></p></center>
-<center><button> New Peep </button></center>
+<center><form method="get" action="/">
+ <input type="submit" value="New Peep"/></center>
+ </form>
 </div>
 
 

@@ -4,7 +4,7 @@ class Chitter < Sinatra::Base
   get '/' do
     erb :index
   end
-
+  
   post '/feed' do
     session[:username] = params[:username]
     session[:peep] = params[:peep]
