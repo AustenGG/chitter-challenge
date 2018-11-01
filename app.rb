@@ -10,7 +10,7 @@ class Chitter < Sinatra::Base
     session[:username] = params[:username]
     session[:peep] = params[:peep]
     connection = PG.connect(dbname: 'chitter')
-    connection.exec("INSERT INTO tweets (username, tweets) VALUES('#{params[:username]}', '#{params[:peep]}')")
+    connection.exec("INSERT INTO feed (username, peeps) VALUES('#{params[:username]}', '#{params[:peep]}')")
     redirect '/feed'
   end
 
