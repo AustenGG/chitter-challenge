@@ -1,5 +1,6 @@
 require "sinatra/base"
 require 'pg'
+require './lib/chitter.rb'
 class Chitter < Sinatra::Base
 
   get '/' do
@@ -15,6 +16,7 @@ class Chitter < Sinatra::Base
   end
 
   get '/feed' do
+    @feed = Chitter.view
     erb :feed
   end
 
