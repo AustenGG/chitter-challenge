@@ -5,6 +5,10 @@ feature 'creating post' do
     fill_in('peep', with: 'My first peep')
     click_button('Submit')
 
-    #carry on
+    expect(page).to have_content 'Jhon'
+    expect(page).to have_content 'My first peep'
+  end
+  scenario 'USer can see the feed' do
+  end
   end
 end
