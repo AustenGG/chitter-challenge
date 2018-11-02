@@ -1,4 +1,5 @@
 require './lib/chitter.rb'
+
 feature 'creating post' do
   scenario 'filling in name and peep' do
     visit '/'
@@ -10,7 +11,7 @@ feature 'creating post' do
     expect(page).to have_content 'My first peep'
   end
   scenario 'User can see the feed' do
-
+    Chitter.create()
   end
   end
 end
